@@ -1,0 +1,10 @@
+# Folders
+.vscode/
+node_modules/
+coverage/
+dist/
+
+# Files
+.DS_Store
+*.sketch
+*.log
