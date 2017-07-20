@@ -6,9 +6,28 @@
   "license": "MIT",
   "scripts": {
     "setup": "lerna bootstrap",
-    "postinstall": "npm run setup"
+    "postinstall": "npm run setup",
+    "lint": "superlint --verbose | snazzy",
+    "test": "npm run lint && jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "devDependencies": {
-    "lerna": "^2.0.0"
+    "babel-jest": "^20.0.3",
+    "babel-plugin-lodash": "^3.2.11",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-flow": "^6.23.0",
+    "del": "^3.0.0",
+    "eslint": "^4.2.0",
+    "eslint-config-supermind": "^0.31.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-tasks-monorepo": "^0.3.1",
+    "husky": "^0.14.3",
+    "jest": "^20.0.4",
+    "lerna": "^2.0.0",
+    "snazzy": "^7.0.0",
+    "superlint": "^0.0.14"
   }
 }
