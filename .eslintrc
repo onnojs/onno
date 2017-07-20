@@ -1,0 +1,10 @@
+{
+  "root": true,
+  "extends": [
+    "supermind",
+    "supermind/flowtype"
+  ],
+  "env": {
+    "jest": true
+  }
+}
