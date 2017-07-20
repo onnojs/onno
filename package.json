@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "name": "onno-repository",
+  "author": "Matthew Wagerfield <matthew@wagerfield.com>",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "setup": "lerna bootstrap",
+    "postinstall": "npm run setup"
+  },
+  "devDependencies": {
+    "lerna": "^2.0.0"
+  }
+}
