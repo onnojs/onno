@@ -37,3 +37,9 @@ To build and run the project for production:
 yarn build
 yarn start
 ```
+
+## Contributing
+
+1. [Fork](https://help.github.com/articles/fork-a-repo/) this repository to your GitHub account
+2. [Clone](https://help.github.com/articles/cloning-a-repository/) your forked version to your local machine
+3. Install the dependencies: `npm install`
