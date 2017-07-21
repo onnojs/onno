@@ -1511,7 +1511,7 @@ escodegen@^1.6.1:
   optionalDependencies:
     source-map "~0.2.0"
 
-eslint-config-supermind@^0.32.0, eslint-config-supermind@latest:
+eslint-config-supermind@^0.32.0:
   version "0.32.0"
   resolved "https://registry.yarnpkg.com/eslint-config-supermind/-/eslint-config-supermind-0.32.0.tgz#7b22465e0d83781c2f7997cfeffd3e1a2e9ddba7"
   dependencies:
@@ -1593,7 +1593,7 @@ eslint-scope@^3.7.1:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
-eslint@^4.2.0, eslint@latest:
+eslint@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.2.0.tgz#a2b3184111b198e02e9c7f3cca625a5e01c56b3d"
   dependencies:
@@ -3768,7 +3768,7 @@ qs@~6.4.0:
   version "6.4.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.4.0.tgz#13e26d28ad6b0ffaa91312cd3bf708ed351e7233"
 
-ramda@latest:
+ramda@^0.24.1:
   version "0.24.1"
   resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.24.1.tgz#c3b7755197f35b8dc3502228262c4c91ddb6b857"
 
@@ -4199,7 +4199,7 @@ sshpk@^1.7.0:
     jsbn "~0.1.0"
     tweetnacl "~0.14.0"
 
-standard-engine@latest:
+standard-engine@^7.1.0:
   version "7.1.0"
   resolved "https://registry.yarnpkg.com/standard-engine/-/standard-engine-7.1.0.tgz#9ef48ac8e70de42dad8246c6f48f923a47469ea9"
   dependencies:
@@ -4310,14 +4310,14 @@ strong-log-transformer@^1.0.6:
     moment "^2.6.0"
     through "^2.3.4"
 
-superlint@^0.0.14:
-  version "0.0.14"
-  resolved "https://registry.yarnpkg.com/superlint/-/superlint-0.0.14.tgz#2a044138b47e209ca3a6c0e7742a6a057434794d"
+superlint@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/superlint/-/superlint-0.1.0.tgz#909616297359f9a8b2dbf3ce541862ac6796a1a3"
   dependencies:
-    eslint latest
-    eslint-config-supermind latest
-    ramda latest
-    standard-engine latest
+    eslint "^4.2.0"
+    eslint-config-supermind "^0.32.0"
+    ramda "^0.24.1"
+    standard-engine "^7.1.0"
 
 supports-color@^2.0.0:
   version "2.0.0"
