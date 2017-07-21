@@ -22,6 +22,7 @@
     "url": "https://github.com/onnojs/onno/issues"
   },
   "dependencies": {
+    "commander": "^2.11.0",
     "lodash": "^4.17.4"
   },
   "devDependencies": {}
