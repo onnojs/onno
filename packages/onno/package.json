@@ -1,6 +1,6 @@
 {
   "name": "onno",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Universal web app framework",
   "homepage": "https://github.com/onnojs/onno#readme",
   "author": "Matthew Wagerfield <matthew@wagerfield.com>",
@@ -24,6 +24,5 @@
   "dependencies": {
     "commander": "^2.11.0",
     "lodash": "^4.17.4"
-  },
-  "devDependencies": {}
+  }
 }
