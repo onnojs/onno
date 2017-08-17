@@ -1,10 +1,10 @@
 const path = require('path')
-const gulp = require('gulp')
-const mono = require('gulp-tasks-monorepo')
+const monorepo = require('gulp-tasks-monorepo')
 const babel = require('gulp-babel')
+const gulp = require('gulp')
 const del = require('del')
 
-const repo = mono({
+const mono = monorepo({
   dir: path.join(__dirname, 'packages'),
   quiet: true
 })
@@ -25,17 +25,23 @@ const srcGlob = (pkg) => [
 // Tasks
 //------------------------------
 
-repo.task('clean', (pkg) => {
+mono.task('mono:clean', (pkg) => {
   return del(pkgGlob(pkg, 'dist'))
 })
 
-repo.task('reset', [ 'clean' ], (pkg) => {
+mono.task('mono:reset', [ 'mono:clean' ], (pkg) => {
   return del(pkgGlob(pkg, '?(node_modules|yarn.lock)'))
 })
 
-repo.task('build', [ 'clean' ], (pkg) => {
+mono.task('mono:build', [ 'mono:clean' ], (pkg) => {
   return gulp
     .src(srcGlob(pkg))
     .pipe(babel())
     .pipe(gulp.dest(pkgGlob(pkg, 'dist')))
+})
+
+gulp.task('build', [ 'mono:build' ])
+gulp.task('clean', [ 'mono:clean' ])
+gulp.task('reset', [ 'mono:reset' ], () => {
+  return del('?(node_modules|yarn.lock)')
 })
