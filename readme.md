@@ -1,5 +1,3 @@
-> Universal web application framework
-
 ## Setup
 
 ```bash
