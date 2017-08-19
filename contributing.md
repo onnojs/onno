@@ -1,8 +1,6 @@
 ## Overview
 
-All `onno` packages are maintained in this mono repository.
-
-[Lerna](https://lernajs.io/) is used to manage and publish these packages to `npm`.
+All `onno` packages are managed in this repository using [lerna](https://lernajs.io/).
 
 Package dependencies are managed using [yarn](https://yarnpkg.com/).
 
